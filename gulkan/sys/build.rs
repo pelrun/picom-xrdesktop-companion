@@ -1,7 +1,7 @@
-#[cfg(feature = "dox")]
+#[cfg(feature = "doc_cfg")]
 fn main() {} // prevent linking libraries to avoid documentation failure
 
-#[cfg(not(feature = "dox"))]
+#[cfg(not(feature = "doc_cfg"))]
 fn main() {
     // build gulkan
     use std::path::Path;

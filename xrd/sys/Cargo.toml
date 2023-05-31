@@ -7,7 +7,7 @@ edition = "2021"
 links = "xrdesktop-0.15"
 
 [package.metadata.docs.rs]
-features = ["dox"]
+rustdoc-args = ["--cfg", "docsrs"]
 
 [lib]
 name = "xrd_sys"
@@ -44,4 +44,4 @@ shell-words = "1.0.0"
 tempfile = "3"
 
 [features]
-dox = ["gio/dox", "glib/dox", "gobject/dox", "gxr/dox", "graphene/dox", "gulkan/dox"]
+

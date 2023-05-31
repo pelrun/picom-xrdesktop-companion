@@ -1,7 +1,7 @@
-#[cfg(feature = "dox")]
+#[cfg(docsrs)]
 fn main() {} // prevent linking libraries to avoid documentation failure
 
-#[cfg(not(feature = "dox"))]
+#[cfg(not(docsrs))]
 fn main() {
     // build gxr
     use std::path::Path;

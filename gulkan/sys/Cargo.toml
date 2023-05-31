@@ -7,7 +7,7 @@ edition = "2021"
 links = "gulkan-0.15"
 
 [package.metadata.docs.rs]
-features = ["dox"]
+rustdoc-args = ["--cfg", "docsrs"]
 
 [lib]
 name = "gulkan_sys"
@@ -44,4 +44,3 @@ shell-words = "1.0.0"
 tempfile = "3"
 
 [features]
-dox = ["glib/dox", "gobject/dox", "graphene/dox", "cairo/dox", "gdk-pixbuf/dox"]
